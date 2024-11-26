@@ -1,0 +1,104 @@
+/* Admin container styling */
+.VQuestion-container {
+  /* max-width: 50rem; */
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #2d3436;
+  list-style: none;
+ 
+}
+
+
+/* Heading style */
+.VQuestion-container h2 {
+  font-size: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* List item styling */
+.VQuestion-container li {
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect (if needed) */
+/* .VQuestion-container li:hover {
+  background: #09c127;
+} */
+
+/* Question details */
+.VQuestion-container li strong {
+  color: #1cb7e2;
+  font-weight: 600;
+}
+
+.VQuestion-container li span {
+  color: #636e72;
+  font-weight: 500;
+}
+
+/* Button styles */
+.vqt-btn {
+  color: white; /* Change text color for better contrast */
+  background-color: #a4d2e3;
+  margin: 1rem;
+  border-radius: 1rem;
+  width: 4rem;
+}
+
+/* ID container styling */
+#vqt-id {
+  color: white; /* Adjusted for contrast */
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(120deg, #1abc9c, #3498db);
+  border-radius: 1rem;
+  margin: 3rem;
+}
+
+/* No questions message */
+.VQuestion-container p {
+  text-align: center;
+  color: #d1bfbf;
+  font-size: 1.2rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .VQuestion-container {
+      padding: 1.5rem;
+  }
+
+  .VQuestion-container h2 {
+      font-size: 1.8rem;
+  }
+
+  .VQuestion-container li {
+      padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .VQuestion-container h2 {
+      font-size: 1.6rem;
+  }
+
+  .VQuestion-container li {
+      font-size: 1rem;
+      padding: 0.8rem;
+  }
+
+  .VQuestion-container a button {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+  }
+}

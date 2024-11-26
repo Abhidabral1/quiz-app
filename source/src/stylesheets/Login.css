@@ -1,0 +1,167 @@
+/* login form */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+/* Main container for centering */
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+/* Container styling for login form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;  
+  background: rgb(143 152 194 / 80%);/* Semi-transparent white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Login form styling */
+.login-form {
+  width: 30rem;
+  height: 30rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Title styling */
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #34495e;
+}
+
+/* Text field styling */
+.text-field1 {
+  width: 85%;
+  margin: 1rem;
+  border: none;
+  border-bottom: 2px solid #3498db;
+  transition: border-bottom 0.3s ease;
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.text-field1:focus {
+  border-bottom: 2px solid #1abc9c;
+}
+
+/* Button styling */
+.btn {
+  position: relative;
+  height: 2rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  background:  rgb(143 152 194 / 80%);
+ 
+  color: white;
+  margin: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8859a4;
+  color: white;
+  font-weight: bold;
+}
+
+/* Password field styling */
+.password-field {
+  position: relative;
+  width: 85%; 
+  margin: 1rem;
+}
+
+.password-input {
+  width: 100%; 
+  padding-right: 3rem; 
+  border: none;
+  border-bottom: 2px solid #3498db;
+  background-color: #f8f9fa;
+  outline: none;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%); 
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  color: #1abc9c;
+}
+
+#para {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+/* Media Queries */
+@media (max-width: 780px) {
+  /* Adjusting container and form on smaller screens */
+  .container {
+    width: 80%;
+    height: auto;
+    background: rgb(143 152 194 / 80%); /* Slightly more opaque */
+  }
+
+  form {
+    width: 80%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  /* Change background image for mobile screens */
+  body {
+    background: url('https://source.unsplash.com/1600x900/?abstract,pattern') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .login-form {
+    width: 90%;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .btn {
+    width: 90%;
+  }
+}

@@ -1,0 +1,61 @@
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .TextField {
+    margin-bottom: 15px;
+  }
+  
+  .TextField input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .PasswordField input {
+    padding-right: 50px; /* To accommodate the eye icon */
+  }
+  
+  .PasswordField button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .titleCss {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #para {
+    font-size: 14px;
+    color:#dc0000;
+  }
+  
+  #pli {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  #pli:hover {
+    text-decoration: underline;
+  }

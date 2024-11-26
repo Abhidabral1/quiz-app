@@ -1,0 +1,185 @@
+/* Define CSS Variables for easier theme adjustments */
+/* :root {
+    --primary-color: #3498db;
+    --primary-hover-color: #2980b9;
+    --secondary-color: #27ae60;
+    --secondary-hover-color: #1e8449;
+    --danger-color: #e74c3c;
+    --danger-hover-color: #c0392b;
+    --bg-color: #f9f9f9;
+    --text-color: #34495e;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-radius: 0.5rem;
+    --container-width: 100%;
+    --container-max-width: 60rem;
+    --spacing: 1.5rem;
+} */
+/* admin css */
+/* Admin Container */
+.admin-container {
+    max-width: var(--container-max-width);
+    width: var(--container-width);
+    margin: 0 auto;
+    margin-top: var(--spacing);
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    background: var(--bg-color);
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+/* Form Styling */
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    background: white;
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-form h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.admin-quest,
+.admin-opt {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.admin-quest:focus,
+.admin-opt:focus {
+    border-color: var(--primary-color);
+}
+
+/* Option Item Styling */
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.option-item input {
+    flex: 1;
+}
+
+.option-item button {
+    padding: 0.6rem 1rem;
+    background: var(--danger-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-item button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.option-item button:hover:not(:disabled) {
+    background-color: var(--danger-hover-color);
+}
+
+/* Buttons Section */
+.add-questions-btn,
+.delete-question-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.add-questions-btn button,
+.delete-question-section button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: var(--border-radius);
+    color: white;
+}
+
+.add-questions-btn button {
+    background: var(--primary-color);
+}
+
+.add-questions-btn button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+#v-q-btn button {
+    background: var(--secondary-color);
+}
+
+#v-q-btn button:hover {
+    background-color: var(--secondary-hover-color);
+}
+
+.delete-question-section button {
+    background: var(--danger-color);
+}
+
+.delete-question-section button:hover {
+    background-color: var(--danger-hover-color);
+}
+
+.add-opt-btn {
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-opt-btn:hover {
+    background: var(--secondary-hover-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .add-questions-btn,
+    .delete-question-section {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .admin-form h2 {
+        font-size: 1.3rem;
+    }
+
+    .add-questions-btn button,
+    .delete-question-section button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-form h2 {
+        font-size: 1.2rem;
+    }
+
+    .add-questions-btn button,
+    .delete-question-section button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}

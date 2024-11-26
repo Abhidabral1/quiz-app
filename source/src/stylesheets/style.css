@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    margin: 1rem;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #333;
+    
+}
+
+ .final, .VQuestion-container, .admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+    background:  rgb(143 152 194 / 80%);
+}
+
+h1, h2 {
+    margin: 10px 0;
+    color: #000;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Alert Messages */
+.alert-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+#h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.User-container {
+    
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+/* User Quiz Page */
+.final {
+    background-color:rgb(143 152 194 / 80%);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer; 
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question-progress {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#quiz {
+    font-size: 1.5rem;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.user-opt {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.user-answer-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    cursor: pointer;
+}
+#opt-id{
+    cursor: pointer;
+}
+.user-opt label {
+    cursor: pointer; /* Make sure the options are clickable */
+}
+/* Navigation Buttons */
+.navigation-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* View Questions Page */
+.VQuestion-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.VQuestion-container li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vqt-btn {
+    margin-top: 10px;
+}
+
+/* Admin Page */
+.admin-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quesContainer {
+    margin-bottom: 20px;
+}
+
+.admin-opt {
+    margin: 20px 0;
+}
+
+.option-item input {
+    margin-bottom: 10px;
+}
+
+.add-questions-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#v-q-btn {
+    /* background-color: #6c757d; */
+    color: white;
+}
